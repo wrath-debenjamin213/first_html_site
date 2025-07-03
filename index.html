@@ -1,0 +1,188 @@
+<!--HTML FIRST PROJECT-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Adding some meta data for the initial webpage index.html will have the following meta data -->
+        <meta name = "author" content = "Ishaan Punetha">
+        
+        <!--one meta tag for the description of the webpage-->
+        <meta name = "description" content = "This is the index page of the The Little Taco Page of the website">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--title of the webpage-->
+        <title>Little Taco Shop</title>
+
+        <!--Adding the link for the style sheet-->
+        <link rel="stylesheet" href="./style.css" type = "text/css">
+
+        <!--Adding a favicon for the web page-->
+        <link rel = "icon" href = "https://images.unsplash.com/photo-1604467715878-83e57e8bc129?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" type=  "image/x-icon">
+
+    </head>
+
+
+    <!--Dealing with the body of the web page-->
+    <body>
+
+        <!--Since we want to make the page more semnatic we need to add the semantic tags-->
+        <header>
+            
+            <h1>Welcome to The Little Taco Shop</h1>
+
+            <!--Adding the about LTS , Our Menu , Store Hours , Contact Us -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About <abbr title="Little Taco Shop">LTS</abbr></a></li>
+
+                    <li><a href="#menu">Our Menu</a></li>
+
+                    <li><a href="hours.html">Store Hours</a></li>
+
+                    <li><a href="contact.html">Contact us</a></li>
+
+
+
+
+                </ul>
+
+
+            </nav>
+
+            <!--Adding an image as well in the header section of the page-->
+
+            <!--Adding image under the figure tag-->
+            <figure>
+                <img src="https://images.unsplash.com/photo-1613591797540-862e54975da8?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tacos and Drinks" title = "We love Tacos!" width = "400" height = "267">
+
+                <figcaption>
+                    Tacos and Drinks
+                </figcaption>
+
+            </figure>
+
+        </header>
+
+        <!--Separating the header section-->
+        <hr>
+        <main>
+            <!--Main content of the page-->
+            <!--Adding an article to the main page first we will use the article tag instead of the section tag in order to add more meaning , also that 
+            we will be adding a small article to -->
+
+            <article id = "about">
+                <h2>ABOUT <abbr title="Little Taco Shop">LTS</abbr></h2>
+
+                <p><abbr title="Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our shop was built from a <strong>love of tacos</strong>🌮🌮🌮
+                I hope that our place adds a lot of unique and interesting place to our little town.
+                </p>
+
+                <!--We will  be using the aside tag since the next piece of content is actually not that important-->
+
+                <aside>
+                    <h3>Taco Trivia 🤓</h3>
+                    <details>
+                        <summary>When did tacos first appear in the United States of America?</summary>
+
+                        <p>
+                            Jeffrey M. Pilcher , taco historian and professor of history at the University of Missesota , says the earliest mention of tacos in the United States are in a newspaper from
+                            <!--Using the time tag to add more sematics-->
+                            <time datetime="1905">1905</time>.(Source: <cite href ="https://www.twistedtaco.com/the-history-of-the-taco"><a href="">Smithsonian Magazine</a></cite>)
+
+                            <!--cite tag used for adding more semantics to the webpage that is we can use the cite tag and converts stuff into italian text-->
+                        </p>
+                    </details>
+
+                </aside>
+
+            </article>
+
+            <hr>
+
+            <!--Adding one more article on the webpage-->
+            <article id = "menu">
+                <h2>Our Menu</h2>
+
+                <!--Adding the table-->
+                <table>
+                    <table>
+                    <!--Dealing withb table semantics-->
+                    <thead>
+                        <tr>
+                            <th scope = "col">Tacos</th>
+                            <th scope = "col"><abbr title="Quantity">Qty</abbr></th>
+                            <th scope = "col">Price</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope = "row" rowspan="3">Crunchy</td>
+                            <td>1</td>
+                            <td>$1.50</td>
+                        </tr>
+
+                        <tr>
+                             <td>2</td>
+                            <td>$2.50</td>
+                        </tr>
+                        <tr>
+                             <td>3</td>
+                            <td>$3.50</td>
+                        </tr>
+
+                        <tr>
+                            <th scope = "row" rowspan = "3">Soft</th>
+                            <td>1</td>
+                            <td>$2.00</td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>$3.50</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>$4.50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td  scope = "col" colspan ="3">
+                            Chips &amp; Salsa $2
+                        </td>
+                    </tfoot>
+
+                    </table>
+
+
+                </table>
+
+                <p>
+                    <a href="#">Back to the Top</a>
+                </p>
+                
+
+
+            </article>
+
+
+
+        </main>
+
+        <hr>
+
+        <!--footer section-->
+        <footer>
+
+            <p>Copyright &copy; The Little Taco Shop</p>
+
+        </footer>
+        
+
+
+
+    </body>
+</html>
